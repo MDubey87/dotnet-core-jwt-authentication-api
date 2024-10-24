@@ -5,7 +5,7 @@ namespace JwtAuthentication.Services
 {
     public interface IUserService
     {
-        AuthenticateResponse Authenticate(AuthenticateRequest model);
+        AuthenticateResponse? Authenticate(AuthenticateRequest model);
         IEnumerable<UserAccount> GetAll();
     }
     public class UserService : IUserService
